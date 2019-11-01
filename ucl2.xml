@@ -32,11 +32,11 @@
 		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
 	<CMD state="BootStrap" type="jump" > Jumping to Halo OS image. </CMD>
 	<!-- create partition -->
-	<CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending partition shell</CMD>
+	<CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending the partition shell</CMD>
 	<CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
 	<CMD state="Updater" type="push" body="$ sh mksdcard.sh /dev/mmcblk%mmc%"> Partitioning...</CMD>
 	<!-- burn uboot -->
-	<CMD state="Updater" type="push" body="send" file="files/u-boot-imx6ul%6uluboot%_sd.imx" ifdev="MX6UL">Sending u-boot.bin</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/u-boot-imx6ul%6uluboot%_sd.imx" ifdev="MX6UL">Sending halo u-boot.bin</CMD>
 	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc% bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
 	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc% bs=1k seek=1 conv=fsync">write u-boot.bin to sd card</CMD>
 	<CMD state="Updater" type="push" body="$ while [ ! -e /dev/mmcblk%mmc%p1 ]; do sleep 1; echo \"waiting...\"; done ">Waiting for the partition ready</CMD>
