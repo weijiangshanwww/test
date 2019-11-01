@@ -52,7 +52,7 @@
 	
 	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
   </LIST>
-  <LIST name="eMMC" desc="Choose eMMC as media">
+  <LIST name="eMMC" desc="Choose eMMC as storage media">
 	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_emmc.imx" ifdev="MX6UL">Loading U-boot</CMD>		
 	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
 		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL MX6ULL">Loading Kernel.</CMD>
