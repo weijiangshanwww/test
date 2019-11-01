@@ -45,7 +45,7 @@
 	<CMD state="Updater" type="push" body="$ mount -t vfat /dev/mmcblk%mmc%p1 /mnt/mmcblk%mmc%p1"/>
 	<!-- burn zImage -->
 	<CMD state="Updater" type="push" body="send" file="files/halo.bin">Sending halo.bin</CMD>
-	<CMD state="Updater" type="push" body="$ cp $FILE /mnt/mmcblk%mmc%p1/halo.bin">write halo.bin to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ cp $FILE /mnt/mmcblk%mmc%p1/halo.bin">write halo.bin to SD card</CMD>
 
 	<!-- burn m4 demo bins-->
 	<CMD state="Updater" type="push" body="$ umount /mnt/mmcblk%mmc%p1">Unmounting vfat partition</CMD>
