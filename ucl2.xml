@@ -30,7 +30,7 @@
 		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL MX6ULL">Loading Initramfs.</CMD>
 	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6ul-%6uldtb%%ldo%.dtb" address="0x83000000"
 		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
-	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+	<CMD state="BootStrap" type="jump" > Jumping to Halo OS image. </CMD>
 	<!-- create partition -->
 	<CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending partition shell</CMD>
 	<CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
