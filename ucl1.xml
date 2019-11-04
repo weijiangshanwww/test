@@ -16,7 +16,8 @@
 *  "show" - Parse and show device info in "file".  
 -->
 
-Add new code in TempMaster.
+Add new code in TempMaster. 
+
 <UCL>
   <CFG>
     <STATE name="BootStrap" dev="MX6UL" vid="15A2" pid="007D"/>
