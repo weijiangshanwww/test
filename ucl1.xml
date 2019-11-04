@@ -20,8 +20,6 @@
 Add new code in TempMaster. 
 
 
-master code changed.
-
 <UCL>
   <CFG>
     <STATE name="BootStrap" dev="MX6UL" vid="15A2" pid="007D"/>
