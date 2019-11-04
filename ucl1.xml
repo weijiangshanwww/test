@@ -15,14 +15,14 @@
 *  "find" - Waits for "timeout" seconds for the "body" device to connect.
 *  "show" - Parse and show device info in "file".  
 -->
-ttttttttttttttt
 
+t't't't't't't't't't't't't't't't
 <UCL>
   <CFG>
     <STATE name="BootStrap" dev="MX6UL" vid="15A2" pid="007D"/>
     <STATE name="Updater"   dev="MSC" vid="066F" pid="37FF"/>
   </CFG>
-  <LIST name="SDCard" desc="Choose SD Card as media">
+  <LIST name="SDCard" desc="Choose SD Card as media testing">
 	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_sd.imx" ifdev="MX6UL">Loading U-boot</CMD>
 	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
 		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL MX6ULL">Loading Kernel.</CMD>
